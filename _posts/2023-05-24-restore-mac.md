@@ -42,5 +42,20 @@ CRT was okay, with no crack and still vacuum tube was still sealed. One thing th
 
 As I expected, the SMD capacitors are leaky, and they leak into many components around them. Some of the leaky electrolytes go under microchips, which are difficult to clean, except by removing the components and cleaning them or using an ultrasonic cleaner. 
 
-`Btw this board included 2 SIMM RAMs which were 4 MB each. So the internal memory total is around 10 MB`
+> Btw this board included 2 SIMM RAMs which were 4 MB each. So the internal memory total is around 10 MB
 
+
+# 2 May 2023
+I tried to disassemble the analog board which I need to remove some cables from the CRT. This needs extra caution, especially for the flyback cable. You need to prepare a cable and a minus screwdriver, which will be used to ground the anode from the CRT. 
+
+![Ground the CRT](/assets/img/mac_classic_ii/mac_discharge.jpeg "Ground the CRT")
+
+> Please be careful when you trying to do this, it cannot zap you with some fatal consequences.
+
+After removing the anode cap, I need to remove the connector on the backside of the CRT. I also need to be careful about the vacuum tubes because it's very fragile. 
+
+![CRT disassembly](/assets/img/mac_classic_ii/mac_crt_removed.jpeg "CRT disassembly")
+
+After removing the connector on the CRT, this time I need to remove the analog board on the side of the computer. This board also suffers from leakage caps, and leakage is visible from one of the caps (the one with brown liquid on top). 
+
+![Analog leak](/assets/img/mac_classic_ii/mac_analog_leakcaps.jpeg "Analog leak")
