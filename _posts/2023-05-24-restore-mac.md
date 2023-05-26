@@ -39,7 +39,7 @@ Okay, then I checked and opened the machine hoping that no battery leakage on th
 
 CRT was okay, with no crack and still vacuum tube was still sealed. One thing that makes me happy is that the battery has already been removed from this machine 👏 although it was very dirty with some dead animals. 
 ### Dusty logic board
----
+
 ![Macintosh Logicboard](/assets/img/mac_classic_ii/mac_logicboard.jpeg "Macintosh Logicboard")
 
 As I expected, the SMD capacitors are leaky, and they leak into many components around them. Some of the leaky electrolytes go under microchips, which are difficult to clean, except by removing the components and cleaning them or using an ultrasonic cleaner. 
@@ -64,9 +64,8 @@ After removing the connector on the CRT, this time I need to remove the analog b
 
 This is a common issue with this analog board. You must replace all of the caps on the analog board rather than replace the leaked one. Because of the age, the "seems good" caps will tend to leak soon. 
 
-I ordered some replacement capacitors from Tokopedia. I pick the best one which variants from Nichicon, Elna, Panasonic, etc. Those brands have a good reputation as a capacitor makers. I ordered mine from this store which has most of the capacitors needed at one place [Power Jaya Plaza](https://www.tokopedia.com/powerjayaplaza?utm_medium=Share&utm_campaign=Shop%20Share&utm_source=Desktop).
-
-#### Opto coupler & other suspects
+I ordered some replacement capacitors from Tokopedia. I pick the best one which variants from Nichicon, Elna, Panasonic, etc. Those brands have a good reputation as capacitor makers. I ordered mine from this store which has most of the capacitors needed in one place [Power Jaya Plaza](https://www.tokopedia.com/powerjayaplaza?utm_medium=Share&utm_campaign=Shop%20Share&utm_source=Desktop).
+### Optocoupler & other suspects
 ![Analog opto](/assets/img/mac_classic_ii/mac_opto.jpeg "Analog opto")
 
 I inspected the board aside from the capacitors, there are some components that tend to fail because of the age of this component. 
@@ -93,7 +92,7 @@ As you can see around the capacitors (rounded white metal), there are some elect
 Some of the traces were lifted because I'm not very careful when I remove the old capacitors. So I used the PCB UV glue to fix the traces and do some wiring to fix those disconnected traces. Sorry, I don't have photos of that.
 
 ## 4 May 2023
-The capacitors for the analog board has arrived. Now it's time to do recapping the analog board. 
+The capacitors for the analog board have arrived. Now it's time to do recapping the analog board. 
 
 ### Caps gunk
 ![Caps gunk](/assets/img/mac_classic_ii/mac_analog_gunk.jpeg "Caps gunk")
@@ -104,3 +103,32 @@ You can see the `CP8` which is the previously leaked capacitor, leaves a gunk on
 ![Analog after cleaning](/assets/img/mac_classic_ii/mac_analog_after_cleaning.jpeg "Analog after cleaning")
 
 After cleaning with the IPA, the board looks clean from the brown gunk. But it's not over, still plenty of capacitors that need to be replaced. 
+
+## 5 May 2023 
+
+All the caps on the analog and the logic were replaced, and now it's time to try to switch on this old machine. As you may know, this is the first time I turn on the machine. I never turn on the machine after it came from the shipping, because I believe that it may be dangerous if I don't check the components first. 
+
+### First turning on
+![First turning on](/assets/img/mac_classic_ii/mac_first_on.jpeg "First turning on")
+
+Tada! The vertical stripes are shown on the monitor. I didn't expect to see this machine start normally though. Some of the machines on the Macintosh forums have the `checkerboard` screen, but mine has the `vertical stripe` screen. 
+
+Btw, when I do the first turn on, I put back the back cover. Because I'm afraid that something will blow up 🤣.
+
+okay moving on...
+
+### 6 May 2023 
+
+The next day, I'm doing my job as usual and trying to give the MAc some warming up. As I do my job, I'm in shock when hearing `BONG` chime, and the screen comes `ALIVE` !!!
+
+The first word I said was 'WEH` and I thank God afterward 🙏
+
+[First turning on (Video)](/assets/img/mac_classic_ii/mac_success_on.mov)
+
+Nothing much on this day, because I'm kind of busy with my job. Some people on the forum said that they had under-voltage issues with their Mac Classic. I did have this issue, the under-voltage issue because of the Optocoupler and the diodes as I mentioned above. I also replaced the `PP1` trimpot, because its voltage is not stable, as I move the trimpot, it kind of has a blank spot on the trimpot, I guess because of the age of the trimpot.
+
+### 7 May 2023 
+I forgot to tell you that I did ultrasonic cleaning using a Relife PCB cleaner. And you know what, it destroys thin plastic on the PCB, as Mic Jack cover, and the `RESET` and `INTERRUPT` buttons on the side of the PCB. So I decided to replace using the regular push button.
+
+![Side buttons](/assets/img/mac_classic_ii/mac_reset_buttons.jpeg "Side buttons")
+
