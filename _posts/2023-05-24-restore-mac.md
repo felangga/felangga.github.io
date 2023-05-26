@@ -3,7 +3,7 @@ layout: post
 title: "Macintosh Classic II Restoration"
 --- 
 
-# 28 April 2023 
+## 28 April 2023 
 I found a nice and complete collection of Macintosh Classic II. It included the Mac itself, keyboard, mouse and an external 800k drive. Someone sells this thing on Instagram, and then I contacted the seller to ask about its condition. He said that it was first hand from his uncle and last January 2023 it was tested okay and running. But currently, he didn't have the power cord to test it. 
 So I decided to do gambling to buy this old machine, I hope that the internal battery is not leaked or better it has already been removed.
 
@@ -17,7 +17,7 @@ After dealing with the price and shipping charges, it then shipped with cargo to
 
 ![Macintosh Package](/assets/img/mac_classic_ii/mac_package.jpeg "Macintosh Package")
 
-# 1 May 2023 
+## 1 May 2023 
 At noon around 1 PM, I was contacted by the cargo courier that they will send a package to my home, and they need me to stand by. Fortunately, I am working at home. 
 So the package came and the wood package was already removed by the courier (I don't know why they do this without confirming with me first). Everything was complete and arrived safely without any crack on the CRT. Except for the keyboard cable to the computer 😢 
 
@@ -28,7 +28,7 @@ So I asked the seller about the cable, and fortunately, the cable was not missin
 
 So he sent the cable without asking for shipping cost 😀
 
-## Tearing down 
+### Tearing down 
 
 ![Macintosh Teardown](/assets/img/mac_classic_ii/mac_teardown.jpeg "Macintosh Teardown")
 
@@ -45,7 +45,7 @@ As I expected, the SMD capacitors are leaky, and they leak into many components 
 > Btw this board included 2 SIMM RAMs which were 4 MB each. So the internal memory total is around 10 MB
 
 
-# 2 May 2023
+## 2 May 2023
 I tried to disassemble the analog board which I need to remove some cables from the CRT. This needs extra caution, especially for the flyback cable. You need to prepare a cable and a minus screwdriver, which will be used to ground the anode from the CRT. 
 
 ![Ground the CRT](/assets/img/mac_classic_ii/mac_discharge.jpeg "Ground the CRT")
@@ -59,3 +59,46 @@ After removing the anode cap, I need to remove the connector on the backside of 
 After removing the connector on the CRT, this time I need to remove the analog board on the side of the computer. This board also suffers from leakage caps, and leakage is visible from one of the caps (the one with brown liquid on top). 
 
 ![Analog leak](/assets/img/mac_classic_ii/mac_analog_leakcaps.jpeg "Analog leak")
+
+This is a common issue with this analog board. You must replace all of the caps on the analog board rather than replace the leaked one. Because of the age, the "seems good" caps will tend to leak soon. 
+
+I ordered some replacement capacitors from Tokopedia. I pick the best one which variants from Nichicon, Elna, Panasonic, etc. Those brands have a good reputation as a capacitor makers. I ordered mine from this store which has most of the capacitors needed at one place [Power Jaya Plaza](https://www.tokopedia.com/powerjayaplaza?utm_medium=Share&utm_campaign=Shop%20Share&utm_source=Desktop).
+
+#### Opto coupler & other suspects
+![Analog opto](/assets/img/mac_classic_ii/mac_opto.jpeg "Analog opto")
+
+I inspected the board aside from the capacitors, there are some components that tend to fail because of the age of this component. 
+- Optocoupler (QP1 - CNY17G)
+- Zener Diode (DP3-DP4 - 1N4148)
+- Trimpot (PP1 - 220 Ohm)
+- TDA4605 (I didn't replace this one *yet)
+
+![Analog back](/assets/img/mac_classic_ii/mac_analog_back.jpeg "Analog back")
+
+This is the view from my analog board from the soldering side, some flux needs some cleaning. As you can see at the bottom of the board, there're black areas from which the capacitors have leaked to the bottom side of the board. Better to clean the board using IPA 90%.
+
+## 3 May 2023
+
+Still waiting for the capacitors to come, I tried to do the logic board first.
+I plan to replace all of the electrolytic capacitors with the tantalum one, which has better age and doesn't leak. 
+
+![Logic board leak](/assets/img/mac_classic_ii/mac_logic_leak.jpeg "Logic board leak")
+
+As you can see around the capacitors (rounded white metal), there are some electrolytes on the board which come from the leaking capacitors around it. I need to clean those using IPA, but the board is also dirty from dust. So I plan to do ultrasonic cleaning after recapping, but this is the first time I do this, so I'm a little bit worried about the result, hoping that everything is okay. 
+
+![Logic board recap](/assets/img/mac_classic_ii/mac_logic_recaps.jpeg "Logic board recap")
+
+Some of the traces were lifted because I'm not very careful when I remove the old capacitors. So I used the PCB UV glue to fix the traces and do some wiring to fix those disconnected traces. Sorry, I don't have photos of that.
+
+## 4 May 2023
+The capacitors for the analog board has arrived. Now it's time to do recapping the analog board. 
+
+### Caps gunk
+![Caps gunk](/assets/img/mac_classic_ii/mac_analog_gunk.jpeg "Caps gunk")
+
+You can see the `CP8` which is the previously leaked capacitor, leaves a gunk on the bottom of it and the surface of the PCB. I also need to clean those using IPA and replace them with the new one. Btw, beside the `CP8` there is `LP5` which is an inductor with missing ferrite. The glue has come off because of the capacitor leakage. Fortunately, I found the missing ferrite inside the case. 
+
+### After Cleaning
+![Analog after cleaning](/assets/img/mac_classic_ii/mac_analog_after_cleaning.jpeg "Analog after cleaning")
+
+After cleaning with the IPA, the board looks clean from the brown gunk. But it's not over, still plenty of capacitors that need to be replaced. 
