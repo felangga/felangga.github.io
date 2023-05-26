@@ -132,3 +132,29 @@ I forgot to tell you that I did ultrasonic cleaning using a Relife PCB cleaner. 
 
 ![Side buttons](/assets/img/mac_classic_ii/mac_reset_buttons.jpeg "Side buttons")
 
+### Internal floppy
+
+After successfully starting up the Macintosh, now I moving on to the floppy disk, so then I can try to boot some system disks. This floppy disk is different from the PC one, so it's not interchangeable. 
+
+![Floppy disk](/assets/img/mac_classic_ii/mac_internal_floppy.jpeg "Floppy disk")
+
+
+### Floppy Ejector Gear
+
+![Floppy disk ejector gear](/assets/img/mac_classic_ii/mac_floppy_ejector_gear.jpeg "Floppy disk ejector gear")
+
+As I expected, the ejector gear is gummed-up and tearing apart. It is the rightmost gear that is broken, everything else is okay. Some people still remake these gears, so I ordered one from eBay. Maybe it will arrive around the end of June. 
+
+So for now, I'll eject the gear with a paper clip. 
+
+### The Head
+
+![Floppy disk head](/assets/img/mac_classic_ii/mac_head_before.jpeg "Floppy disk head")
+
+This is the original head from the seller that I never touched before. There is some space between the top head and bottom head. At this position, the top and bottom head must be touched together. So I need to adjust the spring at the bottom of the head structure. 
+How to do it? You can see the video from [`Branchus Creations`](https://youtu.be/2LWfjsvc8OA?t=2374)
+
+After doing the adjustment, finally, the top head and bottom head are touching. 
+
+![Head after adjustment](/assets/img/mac_classic_ii/mac_head_after.jpeg "Head after adjustment")
+
