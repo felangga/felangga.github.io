@@ -44,7 +44,7 @@ CRT was okay, with no crack and still vacuum tube was still sealed. One thing th
 
 As I expected, the SMD capacitors are leaky, and they leak into many components around them. Some of the leaky electrolytes go under microchips, which are difficult to clean, except by removing the components and cleaning them or using an ultrasonic cleaner. 
 
-> Btw this board included 2 SIMM RAMs which were 4 MB each. So the internal memory total is around 10 MB
+    Btw this board included 2 SIMM RAMs which were 4 MB each. So the internal memory total is around 10 MB
 
 
 ## 2 May 2023
@@ -52,7 +52,7 @@ I tried to disassemble the analog board which I need to remove some cables from 
 
 ![Ground the CRT](/assets/img/mac_classic_ii/mac_discharge.jpeg "Ground the CRT")
 
-> Please be careful when you trying to do this, it cannot zap you with some fatal consequences.
+    Please be careful when you try to do this, it can zap you with some fatal consequences.
 
 After removing the anode cap, I need to remove the connector on the backside of the CRT. I also need to be careful about the vacuum tubes because it's very fragile. 
 
@@ -127,6 +127,7 @@ The first word I said was 'WEH` and I thank God afterward 🙏
 
 Nothing much on this day, because I'm kind of busy with my job. Some people on the forum said that they had under-voltage issues with their Mac Classic. I did have this issue, the under-voltage issue because of the Optocoupler and the diodes as I mentioned above. I also replaced the `PP1` trimpot, because its voltage is not stable, as I move the trimpot, it kind of has a blank spot on the trimpot, I guess because of the age of the trimpot.
 
+
 ## 7 May 2023 
 I forgot to tell you that I did ultrasonic cleaning using a Relife PCB cleaner. And you know what, it destroys thin plastic on the PCB, as Mic Jack cover, and the `RESET` and `INTERRUPT` buttons on the side of the PCB. So I decided to replace using the regular push button.
 
@@ -151,7 +152,7 @@ So for now, I'll eject the gear with a paper clip.
 
 ![Floppy disk head](/assets/img/mac_classic_ii/mac_head_before.jpeg "Floppy disk head")
 
-This is the original head from the seller that I never touched before. There is some space between the top head and bottom head. At this position, the top and bottom head must be touched together. So I need to adjust the spring at the bottom of the head structure. 
+This is the original head from the seller that I never touched before. There is some space between the top head and the bottom head. At this position, the top and bottom head must be touched together. So I need to adjust the spring at the bottom of the head structure. 
 How to do it? You can see the video from [`Branchus Creations`](https://youtu.be/2LWfjsvc8OA?t=2374)
 
 After doing the adjustment, finally, the top head and bottom head are touching. 
