@@ -117,7 +117,7 @@ Btw, when I do the first turn on, I put back the back cover. Because I'm afraid 
 
 okay moving on...
 
-### 6 May 2023 
+## 6 May 2023 
 
 The next day, I'm doing my job as usual and trying to give the MAc some warming up. As I do my job, I'm in shock when hearing `BONG` chime, and the screen comes `ALIVE` !!!
 
@@ -127,7 +127,7 @@ The first word I said was 'WEH` and I thank God afterward 🙏
 
 Nothing much on this day, because I'm kind of busy with my job. Some people on the forum said that they had under-voltage issues with their Mac Classic. I did have this issue, the under-voltage issue because of the Optocoupler and the diodes as I mentioned above. I also replaced the `PP1` trimpot, because its voltage is not stable, as I move the trimpot, it kind of has a blank spot on the trimpot, I guess because of the age of the trimpot.
 
-### 7 May 2023 
+## 7 May 2023 
 I forgot to tell you that I did ultrasonic cleaning using a Relife PCB cleaner. And you know what, it destroys thin plastic on the PCB, as Mic Jack cover, and the `RESET` and `INTERRUPT` buttons on the side of the PCB. So I decided to replace using the regular push button.
 
 ![Side buttons](/assets/img/mac_classic_ii/mac_reset_buttons.jpeg "Side buttons")
