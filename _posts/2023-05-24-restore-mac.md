@@ -4,7 +4,7 @@ title: "Macintosh Classic II Restoration"
 --- 
 
 ## 28 April 2023 
-I found a nice and complete collection of Macintosh Classic II. It included the Mac itself, keyboard, mouse and an external 800k drive. Someone sells this thing on Instagram, and then I contacted the seller to ask about its condition. He said that it was first hand from his uncle and last January 2023 it was tested okay and running. But currently, he didn't have the power cord to test it. 
+I found a nice and complete collection of Macintosh Classic II. It included the Mac itself, keyboard, mouse and an external 800k drive. Someone sells this thing on Instagram, and then I contacted the seller to ask about its condition. He said that it was the first hand from his uncle and last January 2023 it was tested okay and running. But currently, he didn't have the power cord to test it. 
 So I decided to do gambling to buy this old machine, I hope that the internal battery is not leaked or better it has already been removed.
 
 ![Macintosh Classic II](/assets/img/mac_classic_ii/mac.png "Macintosh Classic II")
@@ -119,9 +119,9 @@ okay moving on...
 
 ## 6 May 2023 
 
-The next day, I'm doing my job as usual and trying to give the MAc some warming up. As I do my job, I'm in shock when hearing `BONG` chime, and the screen comes `ALIVE` !!!
+The next day, I'm doing my job as usual and trying to give the Mac some warming up. As I do my job, I'm in shock when hearing `BONG` chime, and the screen comes `ALIVE` !!!
 
-The first word I said was 'WEH` and I thank God afterward 🙏
+The first word I said was `WEH` and I thank God afterward 🙏
 
 [First turning on (Video)](/assets/img/mac_classic_ii/mac_success_on.mov)
 
@@ -135,7 +135,7 @@ I forgot to tell you that I did ultrasonic cleaning using a Relife PCB cleaner. 
 
 ### Internal floppy
 
-After successfully starting up the Macintosh, now I moving on to the floppy disk, so then I can try to boot some system disks. This floppy disk is different from the PC one, so it's not interchangeable. 
+After successfully starting up the Macintosh, now I moving on to the floppy disk, so then I can try to boot some system disks. This floppy disk is different from the PC one, so it's not interchangeable. I'm tearing down the floppy disk drive and giving some cleaning and lubing into all the mechanical. 
 
 ![Floppy disk](/assets/img/mac_classic_ii/mac_internal_floppy.jpeg "Floppy disk")
 
@@ -158,4 +158,81 @@ How to do it? You can see the video from [`Branchus Creations`](https://youtu.be
 After doing the adjustment, finally, the top head and bottom head are touching. 
 
 ![Head after adjustment](/assets/img/mac_classic_ii/mac_head_after.jpeg "Head after adjustment")
+
+## 13 May 2023
+
+I didn't have a diskette to test the floppy disk. So I ordered online from Surabaya and Jakarta. 
+I ordered a BNIB (Brand New In Box) for 1 pack which contains 10 diskettes, it cost me around Rp 300k. Also, I bought a used one, much cheaper around Rp 50k for 10 diskettes. On this day, the package is coming and at first, I tried the new one. The package is sealed and there's no guarantee that the disk will work (sad). 
+
+Do you know what, every disk is not working, and you can spot a mold on the surface of the disk! When I tried to read the disk, it make unusual noise and I'm afraid that it will destroy my floppy disk. I was trying all of the 10 disks, and all of it has the same issue. 
+
+So I decided to go with the old used disk, most of it was working okay. So if you want to find a diskette these days, try the used one, the seller tends to try it first before shipping. Because if you buy the BNIB one, the seller didn't test the disk, because it is sealed. 
+
+### Creating System Disk
+![Creating system disk](/assets/img/mac_classic_ii/mac_burn_system.jpg "Creating system disk")
+
+I'm using this old external IBM floppy disk to write the system disk into the 1.44 Mb floppy disk. For the burner software, I'm using WinImage. For the system software, I'm using System 7.0.1 which is recommended by some forums. You can download the image from here [WinWorldPC](https://winworldpc.com/product/mac-os-7). 
+
+    Note: Macintosh Classic II doesn't support System 6.0.8, but Macintosh Classic does. 
+
+### Testing System Disk
+![Still failed to boot](/assets/img/mac_classic_ii/mac_boot_failed.jpg "Still failed to boot")
+
+After successfully writing the image to the floppy disk, now it's time to test the disk. 
+And... it's still failed successfully. The floppy disk still won't read the disk. 
+There was some reading noise and then followed by an eject noise, and then a diskette icon with an `X` mark on it. 
+
+## 14 May 2023 
+I have an external 800k disk from the seller, and I assume that the internal disk was broken in the first place. 
+FYI the internal floppy disk is FDHD which supports a 1.44 Mb disk instead of the 800k external disk which only read 400k and 800k disks. So I inspected the internal floppy head, and I think the top head seems to be fell of. I don't know if it was originally like that, or if someone has been trying to repair it before.
+
+So I decided to try swapping the 800k head with the FDHD head, and....
+
+![happy mac](/assets/img/mac_classic_ii/mac_happy.jpg "happy mac")
+
+**A little happy Mac.**
+
+So I found out that the 800k and the FDHD head have the same physical and functional, but with a different control board.
+So far it can read and write into 1.44 Mb disk normally, and I have no issue with it. 
+
+It's done for the floppy, now I just need to wait for the replacement gear to come. 
+
+## 15 May 2023
+This time, I want to try retrobriting some of the cases. This is the first time I'm doing this, and little worried that it fails. So, I'm using 10% H2O2 (Hydrogen Peroxide) and a plastic container to do it. For testing, I did the mouse first, because it's small and fits with my plastic container. 
+
+![Mouse before retrobrite](/assets/img/mac_classic_ii/mac_mouse_before.jpg "Mouse before retrobrite")
+
+Leaving on the UV light from the Sun (I bought UV light too, but in the end, I won't use this) for 1-2 hours. 
+
+![Mouse after retrobrite](/assets/img/mac_classic_ii/mac_mouse_after.jpg "Mouse after retrobrite")
+
+Here is the result. 
+
+After having success retrobriting the mouse, I tried the other peripherals (keyboard, external floppy, and Macintosh case).
+![Mac case before retrobrite](/assets/img/mac_classic_ii/mac_retrobrite.jpg "Mouse case before retrobrite")
+
+### BlueSCSI
+So after successfully running the system from the floppy disk, I want this Macintosh to have a hard disk. But these days a hard disk is not reliable and it's slow. So I search online about having microSD interface to use with this old Macintosh. 
+
+So I found [BlueSCSI](https://github.com/erichelgeson/BlueSCSI) which is open source and if you need to buy one, you can order from the website [BlueSCSI](https://scsi.blue/). 
+
+Unfortunately, it's not available in Indonesia. So I think because it's open source, I try to recreate the PCB and build one for myself. I replaced the Resistor Array and the MicroSD shield because it's hard to find in Indonesia. 
+
+So here is the result 
+
+![BlueSCSI PCB](/assets/img/mac_classic_ii/mac_bluescsi.jpg)
+
+I forgot to print the PCB with blue color. 
+I still have 4 of these, if you want to order, you can contact me.
+
+### Running on BlueSCSI
+![BlueSCSI working](/assets/img/mac_classic_ii/mac_bluescsi_working.jpg)
+
+After assembly and burning the images on the microSD, it's time to test this device. 
+Btw, I'm using System 7.5.3 which is a little heavy, better use System 7.0.1 for this old machine. 
+
+![BlueSCSI boot](/assets/img/mac_classic_ii/mac_bluescsi_boot.jpg)
+
+You can watch the [video here](/assets/videos/mac_classic_ii/bluescsi_working.mov)
+
 
