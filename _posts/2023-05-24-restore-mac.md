@@ -233,6 +233,6 @@ Btw, I'm using System 7.5.3 which is a little heavy, better use System 7.0.1 for
 
 ![BlueSCSI boot](/assets/img/mac_classic_ii/mac_bluescsi_boot.jpg)
 
-You can watch the [video here](/assets/videos/mac_classic_ii/bluescsi_working.mov)
+You can watch the [video here](/assets/videos/mac_classic_ii/bluescsi_working.MOV)
 
 
