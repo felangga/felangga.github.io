@@ -4,7 +4,7 @@ title: "Macintosh Classic II Restoration"
 --- 
 
 ## 28 April 2023 
-I found a nice and complete collection of Macintosh Classic II. It included the Mac itself, keyboard, mouse and an external 800k drive. Someone sells this thing on Instagram, and then I contacted the seller to ask about its condition. He said that it was the first hand from his uncle and last January 2023 it was tested okay and running. But currently, he didn't have the power cord to test it. 
+I found a nice and complete collection of Macintosh Classic II. It included the Mac itself, keyboard, mouse and an external 800k drive. Someone sells this thing on Instagram, and then I contacted the seller to ask about its condition. He said that it was first hand from his uncle and last January 2023 it was tested okay and running. But currently, he didn't have the power cord to test it. 
 So I decided to do gambling to buy this old machine, I hope that the internal battery is not leaked or better it has already been removed.
 
 ![Macintosh Classic II](/assets/img/mac_classic_ii/mac.png "Macintosh Classic II")
@@ -235,4 +235,17 @@ Btw, I'm using System 7.5.3 which is a little heavy, better use System 7.0.1 for
 
 You can watch the [video here](/assets/videos/mac_classic_ii/bluescsi_working.MOV)
 
+## 28 May 2023 
 
+Currently, there is no PRAM battery because the original battery is removed by the previous owner. So I decided to replace the battery with CR2032. 
+This kind of battery is not leaking and won't be exploded like the old type of battery. So I modified the CR2032 battery holder to be able to be inserted into the original battery holder. 
+![CR2032 battery holder](/assets/img/mac_classic_ii/mac_battery.jpeg)
+
+## 29 May 2023
+
+This is the final restoration of the Macintosh Classic II, but there are some remaining problems that I still need to fix but currently, I don't have a solution for this:
+1. Sometimes the screen would wobble and some noise appears on the right side of the screen. 
+2. The geometry of the CRT screen needs adjustment, already tried to adjust the magnet, but still not perfect.
+
+
+![Final restoration](/assets/img/mac_classic_ii/mac_final.jpeg)
