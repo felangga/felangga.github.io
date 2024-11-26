@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "Apple Mechanical Keyboard Restoration"
+categories: ["Restoration"]
+tags: ["Macintosh", "Apple", "Keyboard"]
 --- 
 
 
-I got this beautiful old keyboard from my friend, it is Apple mechanical keyboard from 1986. Why do I love this keyboard? because it's mechanical, and I believe that a mechanical keyboard has longer age than a membrane keyboard. The keycaps mostly use PBT plastic, but the plastic cover case and the space button are made with ABS plastic so it is yellowing over time. So I decided to restore the plastic using an H2O2 solution.
+I got this beautiful old keyboard from my friend, it is an Apple mechanical keyboard from 1986. Why do I love this keyboard? because it's mechanical, and I believe that a mechanical keyboard has a longer age than a membrane keyboard. The keycaps mostly use PBT plastic, but the plastic cover case and the space button are made with ABS plastic so it is yellowing over time. So I decided to restore the plastic using an H2O2 solution.
 
 ## Before restoration
 This is the picture before the restoration
