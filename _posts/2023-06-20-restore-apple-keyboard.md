@@ -3,6 +3,7 @@ layout: post
 title: "Apple Mechanical Keyboard Restoration"
 categories: ["Restoration"]
 tags: ["Macintosh", "Apple", "Keyboard"]
+toc: true
 --- 
 
 

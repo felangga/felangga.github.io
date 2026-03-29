@@ -3,6 +3,7 @@ layout: post
 title: "Macintosh Classic II Restoration"
 categories: ["Restoration"]
 tags: ["Macintosh", "Apple"]
+toc: true
 --- 
 
 ## 28 April 2023 
