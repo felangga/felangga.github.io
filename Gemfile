@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy", "~> 5.6", ">= 5.6.1"
+gem "jekyll-theme-chirpy", "~> 7.5", ">= 7.5.0"
 
 group :test do
   gem "html-proofer", "~> 3.18"
@@ -28,3 +28,6 @@ if RUBY_PLATFORM =~ /linux-musl/
 end
 
 gem 'jekyll-archives'
+gem 'jekyll-paginate'
+gem 'jekyll-sitemap'
+gem 'jekyll-seo-tag'
