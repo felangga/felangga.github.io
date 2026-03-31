@@ -1,10 +1,12 @@
 ---
 title: HackRF Mayhem Failed to Update - M0 Guru Meditation Hard
 date: 2025-05-05 08:53:00 +07:00
+categories:
+- Tools
 tags:
 - hackrf
 - radio
-comments: true
+toc: true
 ---
 
 I was on Mayhem Portapack **v2.0.1** and want to upgrade to the latest stable release v2.1.0. The update went okay using the web upgrade [https://hackrf.app/](https://hackrf.app). But then I saw the latest nightly update and want to try it, since it has many new tools that are not yet included in the stable release. But then the update failed :(
