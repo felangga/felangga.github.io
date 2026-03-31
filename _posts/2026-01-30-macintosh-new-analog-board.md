@@ -17,4 +17,4 @@ Around 2025 I found this github repostiory ([link](https://github.com/daanvdl/Cl
 # Component Migration
 After it arrived, I started to migrate all the components from the old analog board to the new one. Suprisingly it fixed the issue, now the intermittent issue is not appearing anymore. My assumption is that some of the capacitors electrolyte leaked and damaged the PCB trace and caused this intermittent issue. 
 
-![New Analog Board](/assets/img/mac_classic_ii/new_analog_board/new_board.heic "New Analog Board")
+![New Analog Board](/assets/img/mac_classic_ii/new_analog_board/new_board.png "New Analog Board")
