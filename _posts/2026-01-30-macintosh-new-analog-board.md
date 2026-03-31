@@ -1,10 +1,14 @@
 ---
+title: Macintosh Classic II New Analog Board
+date: 2026-01-30 00:00:00 +07:00
+categories:
+- Restoration
+tags:
+- Macintosh
+- Apple
 layout: post
-title: "Macintosh Classic II New Analog Board"
-categories: ["Restoration"]
-tags: ["Macintosh", "Apple"]
 toc: true
---- 
+---
 
 ## The Issue 
 It’s been a while since my last post about restoring the Macintosh Classic II ([link](https://felangga.com/posts/restore-mac/)). At the time, the machine was still suffering from intermittent brightness issues, it would boot up with normal brightness, only to slowly go dim.

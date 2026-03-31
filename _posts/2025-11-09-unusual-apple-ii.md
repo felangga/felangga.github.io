@@ -1,10 +1,14 @@
 ---
+title: Unusual Apple II
+date: 2025-11-09 00:00:00 +07:00
+categories:
+- Restoration
+tags:
+- Apple
+- AppleII
 layout: post
-title: "Unusual Apple II"
-categories: ["Restoration"]
-tags: ["Apple", "AppleII"]
 toc: true
---- 
+---
 
 ## Apple II Europlus
 ![Apple II Europlus](/assets/img/appleii/appleii.png "Apple II Europlus")

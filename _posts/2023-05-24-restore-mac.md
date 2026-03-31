@@ -1,10 +1,14 @@
 ---
+title: Macintosh Classic II Restoration
+date: 2023-05-24 00:00:00 +07:00
+categories:
+- Restoration
+tags:
+- Macintosh
+- Apple
 layout: post
-title: "Macintosh Classic II Restoration"
-categories: ["Restoration"]
-tags: ["Macintosh", "Apple"]
 toc: true
---- 
+---
 
 ## 28 April 2023 
 I found a nice and complete collection of Macintosh Classic II. It included the Mac itself, keyboard, mouse and an external 800k drive. Someone sells this thing on Instagram, and then I contacted the seller to ask about its condition. He said that it was first hand from his uncle and last January 2023 it was tested okay and running. But currently, he didn't have the power cord to test it. 

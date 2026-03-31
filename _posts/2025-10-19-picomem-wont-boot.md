@@ -1,10 +1,16 @@
 ---
+title: PicoMem won’t boot – No Green Light
+date: 2025-10-19 00:00:00 +07:00
+categories:
+- Restoration
+tags:
+- IBM
+- PC
+- Emulator
+- Picomem
 layout: post
-title: "PicoMem won’t boot – No Green Light"
-categories: ["Restoration"]
-tags: ["IBM", "PC", "Emulator", "Picomem"]
 toc: true
---- 
+---
 
 I got my PicoMem a couple of weeks ago, and it had been running great—until yesterday. Out of nowhere, it just stopped booting. The BIOS wouldn’t come up at all.
 

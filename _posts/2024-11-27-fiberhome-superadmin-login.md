@@ -1,8 +1,9 @@
 ---
+title: Fiberhome HG6145D2 Superadmin Login
+date: 2024-11-27 00:00:00 +07:00
 layout: post
-title: "Fiberhome HG6145D2 Superadmin Login"
 toc: true
---- 
+---
 
 Maybe some of you are using In**ehome ISP as your home internet and found out that using the provided login has minimal options to configure the router:
 ```
