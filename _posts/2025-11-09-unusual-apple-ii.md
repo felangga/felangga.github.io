@@ -6,7 +6,7 @@ tags: ["Apple", "AppleII"]
 toc: true
 --- 
 
-# Apple II Europlus
+## Apple II Europlus
 ![Apple II Europlus](/assets/img/appleii/appleii.png "Apple II Europlus")
 
 So I just picked up an Apple II Europlus off Instagram. The seller said it was brand new and never used, and honestly, the case is still in great shape. The motherboard’s way cleaner than my other Apple II, and it actually runs fine—the ROM’s working perfectly too. The only problem is the keyboard encoder, which I’ve heard is a pretty common issue on these Europlus machines.
@@ -18,7 +18,7 @@ The sticker itself said that it was Made In Ireland. But the motherboard and the
 
 ![Apple II Faded Logo](/assets/img/appleii/appleii-faded-logo.png "Apple II Faded Logo")
 
-# Power Supply
+## Power Supply
 The power supply also rather suspicious, different with my other Apple II PSU. It was made in Hong Kong but it was “erased”.
 The component inside the power supply itself feels cheap. Totally different with the Apple II power supply that you can find on the internet.
 
@@ -30,7 +30,7 @@ The component inside the power supply itself feels cheap. Totally different with
 
 I don’t know the reason but I guess this one of Apple action to reduce the production price of this computer.
 
-# The Issue & Solution
+## The Issue & Solution
 This is the most common issue with the Europlus series which use the RF keyboard version. The issue is with the keyboard encoder and also with the key itself.
 
 When you find this kind of keyboard, please do not disassemble, or you will find a hard-time to assembled it again.
@@ -44,7 +44,7 @@ I found this open-source project to replace the Apple II keyboard encoder from [
 
 ![Apple Encoder Schematic](/assets/img/appleii/appleii-encoder-schematic.png)
 
-```
+```cpp
 /*
   Apple II Datanetics Keyboard controller AY-5-3600 replacement
   By frank mels
@@ -268,5 +268,5 @@ void vWaitKey(unsigned char ucWaitType) {
 }
 ```
 
-# Troubleshooting
+## Troubleshooting
 At first, the encoder didn’t work. I thought it was a hardware issue with my Apple II, so I replaced all the TTL chips on the keyboard PCB. That didn’t fix the problem. I had scavenged the chips from an unused Arduino Uno board, which normally uses a 16 MHz crystal as an external clock. However, I hadn’t installed the crystal on this board. I needed to change the fuse bits to enable the internal clock instead of the external one — and that solved the issue!
