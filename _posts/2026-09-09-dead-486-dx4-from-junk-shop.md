@@ -4,7 +4,7 @@ date: 2026-09-09 00:00:00 +07:00
 categories:
 - Restoration
 tags:
-- 486
+- "486"
 - Motherboard
 - Retro
 - Repair
