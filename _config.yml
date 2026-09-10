@@ -66,7 +66,7 @@ google_analytics:
   pv:
     proxy_endpoint: 
     cache_path: 
-theme_mode: dark
+theme_mode: light  # was dark
 img_cdn: 
 avatar: https://avatars.githubusercontent.com/u/14814984?s=400&v=4
 toc: true
