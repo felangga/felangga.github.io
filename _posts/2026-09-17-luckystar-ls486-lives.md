@@ -14,7 +14,7 @@ toc: true
 
 The LS486 is back from the dead.
 
-When I [left off last time](/posts/2026-09-09-dead-486-dx4-from-junk-shop/), the board was stone dead. No beeps, no POST codes, no 3.3V rail. The prime suspect was a TIP110A transistor, the linear regulator responsible for dropping the 5V rail down to 3.3V for the processor. After 30 years of service, it had quietly given up.
+When I [left off last time](/posts/dead-486-dx4-from-junk-shop/), the board was stone dead. No beeps, no POST codes, no 3.3V rail. The prime suspect was a TIP110A transistor, the linear regulator responsible for dropping the 5V rail down to 3.3V for the processor. After 30 years of service, it had quietly given up.
 
 Replacing it worked. It just took a couple of detours to get there.
 
