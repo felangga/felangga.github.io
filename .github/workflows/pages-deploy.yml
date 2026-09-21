@@ -52,7 +52,9 @@ jobs:
 
       - name: Test site
         run: |
-          bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
+          bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href > /tmp/proof.log 2>&1 || true
+          echo "=== htmlproofer exit captured ==="; cat /tmp/proof.log
+          cp /tmp/proof.log _site/proof.log
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
