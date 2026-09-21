@@ -49,3 +49,13 @@ The original Intel DX4-100 from the junk shop is dead and now lives in a display
 The board is stable and POSTs reliably. Next up is building out a complete system: a PCI VGA card, a CompactFlash adapter for storage, and DOS 6.22 with Windows 3.11 on top. There is a Sound Blaster 16 somewhere in the parts bin waiting for its turn.
 
 That is a project for another post. For now, the LS486 lives.
+
+## Current Configuration
+
+For my own reference as much as anything, this is the interrupt assignment the machine is running now:
+
+- **PicoMem** — IRQ 3, shared with the NE2000 network card, which is also on IRQ 3
+- **Mouse** — COM1, IRQ 4
+- **Sound Blaster 16** — IRQ 5
+
+The PicoMem has moved on again since the [IRQ 7 setting I settled on previously](/posts/picomem-irq-conflict-with-soundblaster-16/).
