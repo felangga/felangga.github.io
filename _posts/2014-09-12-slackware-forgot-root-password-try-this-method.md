@@ -12,7 +12,7 @@ toc: true
 
 A fairly simple way to reset a forgotten root password, provided your lilo bootloader is not locked. Here are the steps,
 
-- On the LILO bootloader screen, press TAB <tab>to enter command line mode
+- On the LILO bootloader screen, press TAB &lt;tab&gt;to enter command line mode
 
 - Type "Linux single init=/bin/sh rw"
 

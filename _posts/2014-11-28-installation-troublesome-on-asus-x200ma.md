@@ -34,7 +34,7 @@ After that, copy the ISO file that is on sda1 to the installation folder.
 
 - cd /mnt/sda1
 
-- cp <nama>.iso /slack
+- cp &lt;nama&gt;.iso /slack
 
 Go back into the slack installation folder, and create a folder for mounting.
 
@@ -42,7 +42,7 @@ Go back into the slack installation folder, and create a folder for mounting.
 
 - mkdir mnt
 
-- mount -o loop <nama>.iso /slack/mnt
+- mount -o loop &lt;nama&gt;.iso /slack/mnt
 
 Done? No errors? If so, you can continue.
 

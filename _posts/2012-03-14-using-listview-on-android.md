@@ -18,9 +18,9 @@ During my holidays, sometimes i got bored with my computer. So I decided to lear
 
 Lets go to the point, first, you must initialize the array to input the data. Use arrayadapter to set the array.
 
-> private ArrayAdapter<string> dataAdapter;
+> private ArrayAdapter&lt;string&gt; dataAdapter;
 
-> dataAdapter = new ArrayAdapter<string>(this, android.R.layout.simple_expandable_list_item_1);
+> dataAdapter = new ArrayAdapter&lt;string&gt;(this, android.R.layout.simple_expandable_list_item_1);
 
 > list = (ListView) findViewById(R.id.listView1);
 

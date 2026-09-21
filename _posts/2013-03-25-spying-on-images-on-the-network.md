@@ -18,7 +18,7 @@ Without further ado, the tool uses driftnet, so if you're a BackTrack user, you 
 
 How to use it:
 
-- For the storage location for the images that will be captured, we need to create a folder or we can use an existing folder. For example, I will create a folder /mitm/ located in the /root/ directory. Type in the terminal, "cd /root" <enter> then "mkdir mitm"
+- For the storage location for the images that will be captured, we need to create a folder or we can use an existing folder. For example, I will create a folder /mitm/ located in the /root/ directory. Type in the terminal, "cd /root" &lt;enter&gt; then "mkdir mitm"
 
 - The folder has been created, now it's just a matter of using driftnet, the explanation of all driftnet functions can be seen in its **manual pages-**. Try typing "man driftnet"
 
