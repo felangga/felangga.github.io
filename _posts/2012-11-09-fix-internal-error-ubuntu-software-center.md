@@ -14,4 +14,4 @@ Last night my friend told me that the Ubuntu software center on his computer can
 
 > **sudo apt-get install -f**
 
-[![](https://pbs.twimg.com/media/A7RdaLYCMAAIW_X.png)](https://pbs.twimg.com/media/A7RdaLYCMAAIW_X.png)
+[![A7RdaLYCMAAIW X](https://pbs.twimg.com/media/A7RdaLYCMAAIW_X.png)](https://pbs.twimg.com/media/A7RdaLYCMAAIW_X.png)

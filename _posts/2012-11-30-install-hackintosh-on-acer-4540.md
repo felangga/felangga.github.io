@@ -37,10 +37,10 @@ The laptop is actually quite outdated, and can only support Mac OS 10.6 or Snow 
 
 It's no big deal, it was just for trying things out. The result was quite satisfying, but I'm still not fully satisfied because the VGA isn't fully right yet, it's still Low Res (1024x768). It's really unpleasant to look at; my computer's standard resolution is 1366x768. Still doing a lot of experimenting to change the resolution to Full Res.
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXJhveL_Zv5Hl0kyjPpdxfMpRBI6IEQsvCtpW304ZDbCJn-SsQEzyRFg_ZIdo2sjKG3-kwgeuJi5iRfhhEtYAViu0mDI7-wrQIL8G8iuBhvJy3aIiGN1zi0CMOa50IZyCUaiWPFgVBnXU/s1600/IMG_20121126_132546.jpg)
+![IMG 20121126 132546](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXJhveL_Zv5Hl0kyjPpdxfMpRBI6IEQsvCtpW304ZDbCJn-SsQEzyRFg_ZIdo2sjKG3-kwgeuJi5iRfhhEtYAViu0mDI7-wrQIL8G8iuBhvJy3aIiGN1zi0CMOa50IZyCUaiWPFgVBnXU/s1600/IMG_20121126_132546.jpg)
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEik7oxtbVwS4JcCjRa5gCVpaGBeoPmyQocuXZNvZYD6maarjDIqBYsdGd9eF9KfvkLdXoaXQothul-MDZskEbJ_rIE9ZeYUGmKdw_2eYC3n7ri79opmy5J3Nv8VXuU_NNE57_VaBFxspSw/s1600/IMG_20121126_132556.jpg)
+![IMG 20121126 132556](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEik7oxtbVwS4JcCjRa5gCVpaGBeoPmyQocuXZNvZYD6maarjDIqBYsdGd9eF9KfvkLdXoaXQothul-MDZskEbJ_rIE9ZeYUGmKdw_2eYC3n7ri79opmy5J3Nv8VXuU_NNE57_VaBFxspSw/s1600/IMG_20121126_132556.jpg)
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdJsWk_KXaajEBKRWB9FDtFQ9eZ0uazjDnzbRauwSqfUr6AIonl4nAKsxeAhlOouypzvFPzaWGGQ5kwvYzqUDTjKP5vvsAu_vYyVqy8NYH9t8jir-2iDKA2-PpjoF6TYvL5-TpkJ2Ur0A/s1600/IMG_20121126_132739.jpg)
+![IMG 20121126 132739](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdJsWk_KXaajEBKRWB9FDtFQ9eZ0uazjDnzbRauwSqfUr6AIonl4nAKsxeAhlOouypzvFPzaWGGQ5kwvYzqUDTjKP5vvsAu_vYyVqy8NYH9t8jir-2iDKA2-PpjoF6TYvL5-TpkJ2Ur0A/s1600/IMG_20121126_132739.jpg)
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR2-GppqIL467h2JerUxDpZg55GoVtesfyAUP12koBM8__uJyi7-k-PtaUvsDhUE7vVnk43GTv3FRqKY8iX03exvB6Do4rSEgtcaBINh-LaYDsSc5u7n2E8tHxerTdchdWkVUN0RYgKnQ/s1600/IMG_20121126_132818.jpg)
+![IMG 20121126 132818](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR2-GppqIL467h2JerUxDpZg55GoVtesfyAUP12koBM8__uJyi7-k-PtaUvsDhUE7vVnk43GTv3FRqKY8iX03exvB6Do4rSEgtcaBINh-LaYDsSc5u7n2E8tHxerTdchdWkVUN0RYgKnQ/s1600/IMG_20121126_132818.jpg)

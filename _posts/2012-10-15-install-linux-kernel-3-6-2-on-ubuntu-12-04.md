@@ -24,8 +24,8 @@ Last night I want to try new experiment about upgrading Linux kernel in easy way
 
 - Reboot your PC and enjoy the kernel :)
 
-- Here the screenshot about the new kernel :)![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicPLqHOYcXn2b-yjRNyl2Jd6bTx6DV2cPOdXtRwA8GD1xX2hyWURTEOXICidOCHx3TA77Y2L1hvo_Bgk8l1U6CdNzGHUTYcAWOiNWtZM2ieySDls3JRbcqppKSqIUTyX1ufZMSY5o3EhM/s1600/terminal.jpg)
+- Here the screenshot about the new kernel :)![terminal](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicPLqHOYcXn2b-yjRNyl2Jd6bTx6DV2cPOdXtRwA8GD1xX2hyWURTEOXICidOCHx3TA77Y2L1hvo_Bgk8l1U6CdNzGHUTYcAWOiNWtZM2ieySDls3JRbcqppKSqIUTyX1ufZMSY5o3EhM/s1600/terminal.jpg)
 
 But I found some bug on the new kernel. I think it's on the VGA driver. There are some glitch (red arrows) on the text. I'm still working to repair it.
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGlg_8Phv3cxTM5Df4fE08wnue61iQxq08eJKrUUVrsaaFEQKws-OLoC-30TC33e_PYpPJiJNgmyJNcG_2VStSv02V8ks1uJEWcwBYrzSARewp6IuoAsKcvkO1_bhQ0AzzV2L1WY5rVKg/s1600/bug.jpg)
+![bug](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGlg_8Phv3cxTM5Df4fE08wnue61iQxq08eJKrUUVrsaaFEQKws-OLoC-30TC33e_PYpPJiJNgmyJNcG_2VStSv02V8ks1uJEWcwBYrzSARewp6IuoAsKcvkO1_bhQ0AzzV2L1WY5rVKg/s1600/bug.jpg)

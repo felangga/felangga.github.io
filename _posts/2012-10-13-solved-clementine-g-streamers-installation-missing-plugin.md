@@ -12,7 +12,7 @@ layout: post
 toc: true
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEib7uDML3Q4uTvlgCZLnjBt6pY9HTyg8OEgWgcZIGvs4-CpVNNt9H4n-rTQf-jj1CHoftqGgId617AIM02h5b3_5IsKYSutt2TcPhM0cSwCAaZicYiL4Zwp8wQjVdHD3dJKGeouXkz7jZo/s1600/Screenshot+from+2012-10-14+00:38:08.png)
+![Screenshot from 2012 10 14 00 38 08](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEib7uDML3Q4uTvlgCZLnjBt6pY9HTyg8OEgWgcZIGvs4-CpVNNt9H4n-rTQf-jj1CHoftqGgId617AIM02h5b3_5IsKYSutt2TcPhM0cSwCAaZicYiL4Zwp8wQjVdHD3dJKGeouXkz7jZo/s1600/Screenshot+from+2012-10-14+00:38:08.png)
 
 I just downloaded media player for my Linux, because I got bored with my old media player. I downloaded Clementine media player. Such a good media player, that support Last.FM and Radio streamers.
 

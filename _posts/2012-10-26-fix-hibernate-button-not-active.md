@@ -18,7 +18,7 @@ After installing Linux Mint 13, I did many tweak with my linux, such as upgrade 
 
 - Your **swap partition**is not big enough to contain RAM contents.
 
-- You can check the size of your swap partition and the size of memory inside RAM. Type **free -m** inside the terminal. ![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHLxu2y2-MDZU-buk_BNquvkDQGFeLvBjrvNKtIT6mW9WTe-EHyfhnQ7X_hPYcdAltgJ92eZWLCvO3ouSS6KGosSpvP6A0iN454Na7fjNAG0p0Newus4HaRy0RelT0XqYU2seS-alml0g/s1600/Screenshot+-+10262012+-+07:38:26+PM.png)
+- You can check the size of your swap partition and the size of memory inside RAM. Type **free -m** inside the terminal. ![Screenshot 10262012 07 38 26 PM](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHLxu2y2-MDZU-buk_BNquvkDQGFeLvBjrvNKtIT6mW9WTe-EHyfhnQ7X_hPYcdAltgJ92eZWLCvO3ouSS6KGosSpvP6A0iN454Na7fjNAG0p0Newus4HaRy0RelT0XqYU2seS-alml0g/s1600/Screenshot+-+10262012+-+07:38:26+PM.png)
 
 - You can see my computer's running memory above. My swap size is 1905 MB and the running memory is 2755 MB. This make the hibernate button not active, because running memory > swap size.
 

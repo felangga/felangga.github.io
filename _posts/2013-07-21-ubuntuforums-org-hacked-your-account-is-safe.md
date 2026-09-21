@@ -15,4 +15,4 @@ Earlier today (21/7/2013), the account of the hacker who had attacked the ubuntu
 
 More details [here](http://www.twitlonger.com/show/n_1rlft0d)
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQrcwczQXtk7a3fkgSwtEDKw_Q1J7CTHckHEU4pHG2dNHU-RPWCpNus4mVun-rLJvVWqTqvZBw3L2_Dn9p1-52KRt3_gouNuj6zIZcN0e7tmKqUlEJp0n-ddJBOvPKmeF0ajx_1C4KkZ8/s1600/snapshot1.png)
+![snapshot1](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQrcwczQXtk7a3fkgSwtEDKw_Q1J7CTHckHEU4pHG2dNHU-RPWCpNus4mVun-rLJvVWqTqvZBw3L2_Dn9p1-52KRt3_gouNuj6zIZcN0e7tmKqUlEJp0n-ddJBOvPKmeF0ajx_1C4KkZ8/s1600/snapshot1.png)

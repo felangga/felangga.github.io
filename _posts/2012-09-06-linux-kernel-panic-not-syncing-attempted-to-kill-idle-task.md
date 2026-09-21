@@ -22,7 +22,7 @@ Call Trace: bla bla bla.
 
 (look at the screenshot below)
 
-| ![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhd6nTunb_YlE4Z94oI0ET7v4I78ofdhL2xrZboISBzIUiE7fReH6XIzz-dANe2KTQEEEx715a9V_os-J9C9PHJby5AmDsgPAGWHVd2W5dg7G4ld8ZLL13tLWAkGhs-twN3wMYwbS-RucM/s1600/P0t0(284).jpg).jpg) |
+| ![P0t0 284](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhd6nTunb_YlE4Z94oI0ET7v4I78ofdhL2xrZboISBzIUiE7fReH6XIzz-dANe2KTQEEEx715a9V_os-J9C9PHJby5AmDsgPAGWHVd2W5dg7G4ld8ZLL13tLWAkGhs-twN3wMYwbS-RucM/s1600/P0t0(284).jpg).jpg) |
 
 | My laptop - Kernel panic |
 

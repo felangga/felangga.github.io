@@ -25,4 +25,4 @@ After restore xorg.conf from the backup file, the default driver ran again, but 
 
 After those steps completed, you must reboot your system to check if the driver successfully updated.
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHJPvHn2_7hyD_bECqIk_oUqV74wwABE7JtbMz-clzCX0yBzTfzz5W46woTNEAva1GjJqDZPPZsIUg5jb0u8dFtcZbLgZlBhTI67CQpitCZtGhfaFyWk1hwj8kYos_KrwipDg1nZWTv2k/s1600/galium.jpg)
+![galium](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHJPvHn2_7hyD_bECqIk_oUqV74wwABE7JtbMz-clzCX0yBzTfzz5W46woTNEAva1GjJqDZPPZsIUg5jb0u8dFtcZbLgZlBhTI67CQpitCZtGhfaFyWk1hwj8kYos_KrwipDg1nZWTv2k/s1600/galium.jpg)

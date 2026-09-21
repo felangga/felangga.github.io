@@ -12,7 +12,7 @@ toc: true
 
 Have you ever encountered a problem like this when installing GQRX and trying to run it?
 
-| ![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK3-CoFda4ZqvDc9Qowxh6wZtHmlmBRUYVbu7paUz5SkdaNGgJ3vS997xi0KBhIMfWlk3jZoee2cZzEUfmNb5ivaX-V2y48Ko7J51dnYpPJOUbY4-DF9_okHDJRgNaBcRshV1o0Ecf68c/s1600/Screenshot+from+2014-05-30+23:43:47.png) |
+| ![Screenshot from 2014 05 30 23 43 47](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK3-CoFda4ZqvDc9Qowxh6wZtHmlmBRUYVbu7paUz5SkdaNGgJ3vS997xi0KBhIMfWlk3jZoee2cZzEUfmNb5ivaX-V2y48Ko7J51dnYpPJOUbY4-DF9_okHDJRgNaBcRshV1o0Ecf68c/s1600/Screenshot+from+2014-05-30+23:43:47.png) |
 
 | libvolk error |
 

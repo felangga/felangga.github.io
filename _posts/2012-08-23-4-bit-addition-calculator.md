@@ -17,4 +17,4 @@ Rather than taking forever, I just tried the app earlier. I made it limited to 4
 
 There are 8 switches; the first 4 are the first number, the next 4 are the second number. For example, 1+2 = 3. That means the first 4 switches are set: ON, OFF, OFF, OFF and the 4 switches after that are set: OFF, ON, OFF, OFF. And later, on the LEDs, the order is OFF, OFF, ON, ON, or it can be read as 0011, which is 3.
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgekMMagiGGUbpnc_DQkvQMTXjFb8Uodcpl3p5DhNFEsJr7RmGjh01NwC4jGcJdcjU10onru1QqXdPhOCAhtcrSZXRSJdoWfWvVuuw_pTTW-umXpe8K-7w8yTW3ZWbYbhiwvVgSYRPSt00/)
+![AVvXsEgekMMagiGGUbpnc DQkvQMTXjFb8Uodcpl3p5DhNFEsJr7RmGjh01NwC4jGcJdcjU10onru1QqXdPhOCAhtcrSZXRSJdoWfWvVuuw pTTW umXpe8K 7w8yTW3ZWbYbhiwvVgSYRPSt00](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgekMMagiGGUbpnc_DQkvQMTXjFb8Uodcpl3p5DhNFEsJr7RmGjh01NwC4jGcJdcjU10onru1QqXdPhOCAhtcrSZXRSJdoWfWvVuuw_pTTW-umXpe8K-7w8yTW3ZWbYbhiwvVgSYRPSt00/)

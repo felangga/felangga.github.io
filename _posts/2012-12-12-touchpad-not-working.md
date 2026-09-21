@@ -9,7 +9,7 @@ layout: post
 toc: true
 ---
 
-![](https://blogger.googleusercontent.com/tracker/3046495654911356838-2029829376538815069?l=www.f-comp.com)Maybe for you Linux users whose touchpad isn't working because there's no synaptic driver.
+![3046495654911356838 2029829376538815069](https://blogger.googleusercontent.com/tracker/3046495654911356838-2029829376538815069?l=www.f-comp.com)Maybe for you Linux users whose touchpad isn't working because there's no synaptic driver.
 
 To fix it, try typing the following command
 

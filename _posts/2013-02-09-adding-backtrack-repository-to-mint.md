@@ -9,7 +9,7 @@ layout: post
 toc: true
 ---
 
-[![](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY0wt8gSI-UC55g742Kj_wRJS1xJ72wOFPbp3S6UnVEFpdUgAy3w)](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY0wt8gSI-UC55g742Kj_wRJS1xJ72wOFPbp3S6UnVEFpdUgAy3w)After yesterday trying to add the backbox repository to my mint, it feels incomplete without having a collection from the backtrack dragon. Let's get straight to it, here's how to add the backtrack repository to mint or ubuntu (same thing)
+[![images](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY0wt8gSI-UC55g742Kj_wRJS1xJ72wOFPbp3S6UnVEFpdUgAy3w)](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY0wt8gSI-UC55g742Kj_wRJS1xJ72wOFPbp3S6UnVEFpdUgAy3w)After yesterday trying to add the backbox repository to my mint, it feels incomplete without having a collection from the backtrack dragon. Let's get straight to it, here's how to add the backtrack repository to mint or ubuntu (same thing)
 
 - Open the terminal and type "wget -q h[ttp://all.repository.backtrack-linux.org/backtrack.gpg](http://all.repository.backtrack-linux.org/backtrack.gpg) -O- | sudo apt-key add -" (Without quotes)
 

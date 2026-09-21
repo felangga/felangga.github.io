@@ -11,7 +11,7 @@ layout: post
 toc: true
 ---
 
-[![](http://www.aircrack-ng.org/resources/aircrack-ng-new-logo.jpg)](http://www.aircrack-ng.org/resources/aircrack-ng-new-logo.jpg)Your favorite software now has a new release after 3 years since the last one — a new version has appeared, namely version 1.2 Beta 1. According to the *changelog* on its site, there's added support for new chipsets as well as fixes for several bugs found in the previous version ([link](http://www.aircrack-ng.org/doku.php?id=changelog)).
+[![aircrack ng new logo](http://www.aircrack-ng.org/resources/aircrack-ng-new-logo.jpg)](http://www.aircrack-ng.org/resources/aircrack-ng-new-logo.jpg)Your favorite software now has a new release after 3 years since the last one — a new version has appeared, namely version 1.2 Beta 1. According to the *changelog* on its site, there's added support for new chipsets as well as fixes for several bugs found in the previous version ([link](http://www.aircrack-ng.org/doku.php?id=changelog)).
 
 **Installation**
 

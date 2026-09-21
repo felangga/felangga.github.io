@@ -11,7 +11,7 @@ layout: post
 toc: true
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsr6yc35j-hzUj2LuahBgH6_ZG0zK_q667wOWCbY5NENmW4oL5BrsOAq3KN0Kv82hqkZSVNQrXQsOVxM7ezV8zTD8eCaYYkmSxEdJSNDqDTYdWlXrDiSatPddAuIsbUGAwb63LB7J14EA/s1600/harddisk+bad+sector.jpg)A week ago my computer took forever to boot and wouldn't get into linux. After I tried verbose mode, it turned out there was a failure while reading a sector. I immediately suspected it was a **Bad Sector**.
+![harddisk bad sector](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsr6yc35j-hzUj2LuahBgH6_ZG0zK_q667wOWCbY5NENmW4oL5BrsOAq3KN0Kv82hqkZSVNQrXQsOVxM7ezV8zTD8eCaYYkmSxEdJSNDqDTYdWlXrDiSatPddAuIsbUGAwb63LB7J14EA/s1600/harddisk+bad+sector.jpg)A week ago my computer took forever to boot and wouldn't get into linux. After I tried verbose mode, it turned out there was a failure while reading a sector. I immediately suspected it was a **Bad Sector**.
 
 Then I burned the HDD Regenerator tool that's usually used to repair HDD bad sectors. At first it was fine until it got past 50%, and there were so many errors. HDD Regenerator also **FAILED** to repair it. I got discouraged for a moment, and I tried the following steps:
 
