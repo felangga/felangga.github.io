@@ -47,8 +47,8 @@ plugins:
 - jekyll-seo-tag
 baseurl: ''
 lang: en
-tagline: personal blog
-description: 'Retro computing, 486 builds, vintage hardware restoration and Raspberry Pi home lab notes.'
+tagline: Personal blog and projects
+description: 'Personal blog and projects. Retro computing, 486 builds, vintage Macintosh repairs and Raspberry Pi tinkering.'
 url: https://felangga.github.io
 # Dipakai jekyll-seo-tag untuk <meta name="author">, meta twitter:creator,
 # dan field "author" di JSON-LD BlogPosting.
@@ -111,10 +111,10 @@ assets:
 pwa:
   enabled: true
 paginate: 10
-# Feed Atom default cuma memuat 5 post terbaru; 113 post lama tidak pernah
-# masuk feed reader.
+# Feed Atom: theme Chirpy meng-hardcode `limit: 5` di assets/feed.xml, jadi key
+# di bawah ini hanya berpengaruh setelah assets/feed.xml milik site menimpanya.
 feed:
-  posts_limit: 50
+  posts_limit: 20
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:

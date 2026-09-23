@@ -15,3 +15,13 @@
 {% if site.pwa.enabled %}
   <link rel="manifest" href="{{ favicon_path }}/felangga.webmanifest">
 {% endif %}
+
+<!--
+  Autodiscovery feed Atom. Chirpy tidak pernah memanggil tag feed_meta milik
+  jekyll-feed (bahkan jekyll-feed tidak ada di Gemfile), dan theme memakai
+  include_cached favicons.html di dalam head, jadi file inilah satu-satunya
+  include di head yang bisa kita miliki tanpa menyalin head.html milik theme.
+  CATATAN: jangan tulis tag Liquid apa pun di dalam komentar ini, Liquid tetap
+  merendernya walau berada di dalam komentar HTML.
+-->
+<link rel="alternate" type="application/atom+xml" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title }}">
