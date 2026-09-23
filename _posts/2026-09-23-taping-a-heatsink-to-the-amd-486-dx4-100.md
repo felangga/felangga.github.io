@@ -114,11 +114,7 @@ What actually matters is airflow. The lid says so, and the numbers agree with th
 
 The DX4-100 is properly mounted now and the board is back in the case. [The 3.3V setting is still where it should be](/posts/luckystar-ls486-lives/), which matters more than the heatsink does. I fed one of these 5V by accident once already and it survived, and I am not planning to test that twice.
 
-Next up is the rest of the system: a PCI VGA card, a CompactFlash adapter, DOS 6.22 with Windows 3.11 on top, and the Sound Blaster 16 that is still sitting in the parts bin.
-
-**Update, same week.** That shopping list was already out of date when I wrote it, which I only noticed afterwards.
-
-The CompactFlash adapter is not happening. The [PicoMem](/posts/picomem-irq-conflict-with-soundblaster-16/) I installed earlier has SD card storage built into it, so the machine already had a disk before I went looking for one. I had solved that problem and then forgotten about it.
+The rest of the system came together faster than I expected, and one item on my list turned out to be unnecessary. The [PicoMem](/posts/picomem-irq-conflict-with-soundblaster-16/) I installed earlier has SD card storage built into it, so the CompactFlash adapter I was planning to buy never happened. The machine already had a disk and I had simply forgotten about it.
 
 The Sound Blaster 16 is in the machine and out of the parts bin, and the whole thing boots: **DOS 6.22 with Windows 3.1 on top**, which was the entire point of the exercise. A board that came home from a junk shop completely dead is now running a period correct operating system with sound and storage, and the processor is sitting under a heatsink held on by about a dollar's worth of tape.
 
