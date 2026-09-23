@@ -42,7 +42,7 @@ Both times, the processor survived. I do not recommend testing that yourself.
 
 ## The Processor
 
-The original Intel DX4-100 from the junk shop is dead and now lives in a display case. For this build I am using an AMD Am486 DX-100 instead. Same 100 MHz clock speed, AMD's own silicon.
+The original Intel DX4-100 from the junk shop is dead and now lives in a display case. For this build I am using an AMD Am486 DX4-100 instead. Same 100 MHz clock speed, AMD's own silicon.
 
 ## What Comes Next
 
