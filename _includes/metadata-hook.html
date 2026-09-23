@@ -1,0 +1,20 @@
+<!-- A placeholder to allow defining custom metadata -->
+
+<!-- Site override of the chirpy v7.5.0 placeholder.
+     The home layout carries a single visually hidden h1 so the page has one heading instead of
+     one per post card. Chirpy's CSS bundle ships only the utilities it uses and has no
+     .visually-hidden rule, so define the canonical clip here; without it the heading renders
+     visibly above the post list. -->
+<style>
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+</style>
