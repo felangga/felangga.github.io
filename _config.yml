@@ -48,8 +48,19 @@ plugins:
 baseurl: ''
 lang: en
 tagline: personal blog
-description: 'hobbies and interesting sttufs '
+description: 'Retro computing, 486 builds, vintage hardware restoration and Raspberry Pi home lab notes.'
 url: https://felangga.github.io
+# Dipakai jekyll-seo-tag untuk <meta name="author">, meta twitter:creator,
+# dan field "author" di JSON-LD BlogPosting.
+author:
+  name: felangga
+  url: https://github.com/felangga
+  twitter: erlandhita
+# Logo untuk entri "publisher" di JSON-LD (butuh gambar persegi).
+logo: https://felangga.github.io/assets/img/favicons/felangga-512x512.png
+# og:image situs. Ditimpa per-post kalau post punya `image:` di front matter.
+# Sengaja URL absolut: media-url.html melewati CDN kalau src mengandung ':'.
+social_preview_image: https://felangga.github.io/assets/img/og-preview.png
 github:
   username: felangga
 twitter:
@@ -60,14 +71,21 @@ social:
   links:
   - https://twitter.com/erlandhita
   - https://github.com/felangga
-google_site_verification: 
+# Search Console / Bing. Key lama `google_site_verification` tidak pernah
+# dirender: theme Chirpy punya blok `webmaster_verifications`, sehingga cabang
+# `elsif site.google_site_verification` di jekyll-seo-tag jadi unreachable.
+webmaster_verifications:
+  google: 
+  bing: 
 google_analytics:
   id: 
   pv:
     proxy_endpoint: 
     cache_path: 
 theme_mode: light  # was dark
-img_cdn: 
+# Dikosongkan supaya theme tidak memakai CDN default-nya (chirpy-img.netlify.app)
+# untuk media ber-path relatif. `img_cdn` adalah nama key versi Chirpy lama.
+cdn: 
 avatar: https://avatars.githubusercontent.com/u/14814984?s=400&v=4
 toc: true
 comments:
@@ -93,6 +111,10 @@ assets:
 pwa:
   enabled: true
 paginate: 10
+# Feed Atom default cuma memuat 5 post terbaru; 113 post lama tidak pernah
+# masuk feed reader.
+feed:
+  posts_limit: 50
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
