@@ -1,0 +1,17 @@
+<!--
+  Favicons for this site, generated from the owner's avatar.
+  IMPORTANT: filenames are prefixed with "felangga-" on purpose. The theme
+  (jekyll-theme-chirpy) ships its own files at assets/img/favicons/favicon.ico
+  etc., and Jekyll writes theme static files AFTER site static files, so the
+  theme's copies silently overwrite same-named site files. Unique names avoid
+  that collision entirely.
+-->
+{% capture favicon_path %}{{ '/assets/img/favicons' | relative_url }}{% endcapture %}
+
+<link rel="icon" type="image/png" href="{{ favicon_path }}/felangga-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="{{ favicon_path }}/felangga.svg">
+<link rel="shortcut icon" href="{{ favicon_path }}/felangga.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ favicon_path }}/felangga-apple-touch-icon.png">
+{% if site.pwa.enabled %}
+  <link rel="manifest" href="{{ favicon_path }}/felangga.webmanifest">
+{% endif %}
