@@ -1,0 +1,4 @@
+Contact: mailto:felangga@gmail.com
+Expires: 2027-11-01T00:00:00Z
+Preferred-Languages: en, id
+Canonical: https://felangga.com/.well-known/security.txt
