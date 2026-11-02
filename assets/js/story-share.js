@@ -9,14 +9,16 @@
   "use strict";
 
   var CSS =
-    "#story-share-btn{position:fixed;right:1.5rem;bottom:5.5rem;z-index:1035;display:flex;align-items:center;gap:.5rem;" +
-    "padding:.6rem 1.1rem;border:1px solid #495057;border-radius:2rem;background:#212529;color:#dee2e6;" +
-    "font-size:.95rem;cursor:pointer;box-shadow:0 .25rem .75rem rgba(0,0,0,.35);transition:border-color .15s,color .15s}" +
-    "#story-share-btn:hover{border-color:#3fb950;color:#3fb950}" +
-    "#story-share-btn i{font-size:1.1rem}" +
-    "#story-share-toast{position:fixed;left:50%;transform:translateX(-50%);bottom:9.5rem;z-index:1036;" +
+    "#story-share-btn{padding:0;border:none;line-height:inherit;background:none;cursor:pointer;margin-left:.5rem;" +
+    "display:inline-flex;align-items:center;color:var(--btn-share-color)}" +
+    "#story-share-btn svg{width:1.125rem;height:1.125rem;fill:currentColor;vertical-align:middle}" +
+    "#story-share-btn:hover{color:var(--btn-share-hover-color)}" +
+    "#story-share-toast{position:fixed;left:50%;transform:translateX(-50%);bottom:2.5rem;z-index:1036;" +
     "background:#1a1d20;border:1px solid #495057;border-radius:.75rem;color:#dee2e6;padding:.75rem 1.25rem;" +
     "font-size:.9rem;max-width:80vw;box-shadow:0 .25rem .75rem rgba(0,0,0,.4)}";
+
+  var IG_SVG =
+    '<svg viewBox="0 0 448 512" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>';
 
   function init() {
     if (!document.getElementById("story-share-style")) {
@@ -30,13 +32,23 @@
     if (!isPost) return;
     if (document.getElementById("story-share-btn")) return;
 
+    // Merge into the existing share bar as a 5th icon.
+    var shareIcons = document.querySelector(".share-icons");
+    if (!shareIcons) return;
+
     var btn = document.createElement("button");
     btn.id = "story-share-btn";
     btn.type = "button";
-    btn.title = "Generate an Instagram story card for this post";
-    btn.innerHTML =
-      '<i class="fa-brands fa-instagram"></i><span>Story</span>';
-    document.body.appendChild(btn);
+    btn.title = "Generate an Instagram story card";
+    btn.setAttribute("aria-label", "Story");
+    btn.setAttribute("data-bs-toggle", "tooltip");
+    btn.setAttribute("data-bs-placement", "top");
+    btn.innerHTML = IG_SVG;
+    shareIcons.appendChild(btn);
+
+    if (window.bootstrap && window.bootstrap.Tooltip) {
+      new window.bootstrap.Tooltip(btn);
+    }
 
     btn.addEventListener("click", function () {
       try {
