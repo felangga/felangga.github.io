@@ -1,6 +1,6 @@
 ---
 title: "BlankOn Sinambung: Instal Ulang dan Hardening dari Nol"
-date: 2026-11-07 22:00:00 +07:00
+date: 2026-11-07 18:45:00 +07:00
 categories:
 - Linux
 - Security
