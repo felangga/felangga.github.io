@@ -1,5 +1,5 @@
 ---
-title: "BlankOn Sinambung: Instal Ulang dan Hardening dari Nol"
+title: "BlankOn Sinambung: Fresh Install and Hardening from Zero"
 date: 2026-11-07 18:45:00 +07:00
 categories:
 - Linux
@@ -15,39 +15,40 @@ layout: post
 toc: true
 ---
 
-Setelah beberapa saat vakum, tadi malam saya habiskan buat pasang ulang distro. Keluar dari Windows, sekalian migrasi penuh ke BlankOn Sinambung. Proses instalasinya biasa aja, tapi bagian serunya: habis live, saya langsung hardening dari nol. Ini catatan lengkapnya.
+BlankOn went quiet for a while, then came back with Sinambung. I spent last night wiping Windows and moving the whole machine over to it. The install itself was uneventful. The fun part started after first boot, because a fresh Debian-based install is basically a house with no locks. So I hardened it from scratch. Here is the whole thing.
 
-## Setup-nya
+## The box
 
-- Mesin: AMD Ryzen 5 5600X, 6 core / 12 thread
+- CPU: AMD Ryzen 5 5600X, 6 cores / 12 threads
 - RAM: 31 GB
-- Disk: 232 GB SSD, root dikasih 30 GB (sisanya partisi NTFS lama)
-- Distro: BlankOn Linux 26.0 "Sinambung", basis Debian 14 (trixie)
+- Disk: 232 GB SSD, 30 GB given to root (the rest is an old NTFS partition)
+- Distro: BlankOn Linux 26.0 "Sinambung", Debian 14 (trixie) base
 - Kernel: 7.1.12
 
-BlankOn ternyata nggak bawa `ifconfig` lagi. Itu bukan masalah, `iproute2` udah jadi standar: `ip a`, `ip -br a`, `ip r` ngasih semuanya. Kalau tetap perlu `ifconfig`, tinggal `apt install net-tools`.
+First surprise: BlankOn does not ship `ifconfig` anymore. Not a problem, `iproute2` has been the standard for years. `ip a`, `ip -br a`, `ip r` give you everything. If you really want the old tool, `apt install net-tools` and it is back.
 
-## Audit dulu sebelum hardening
+## Audit before touching anything
 
-BlankOn fresh install bersih, tapi tetap kubongkar:
+A fresh install is clean by default, but I still poked around:
 
-- Proses jalan: cuma Firefox, GNOME Shell, packagekit. Nggak ada yang aneh.
-- Listening port cuma 22 (SSH) dan 631 (CUPS, localhost aja).
-- SUID binaries: semuanya standar Debian (passwd, su, sudo, mount...).
-- AppArmor aktif, 123 profile, 22 enforce.
-- Cron kosong, nggak ada unit systemd gagal (cuma flatpak-add-flathub yang gagal, itu kosmetik).
+- Running processes: Firefox, GNOME Shell, packagekit. Nothing weird.
+- Listening ports: only 22 (SSH) and 631 (CUPS, localhost only).
+- SUID binaries: all stock Debian (passwd, su, sudo, mount, and friends).
+- AppArmor: active, 123 profiles loaded, 22 in enforce mode.
+- Cron: empty. No failed systemd units except `flatpak-add-flathub`, which is cosmetic.
 
-Masalahnya ada di konfigurasi default:
-- **SSH nerima password auth.** Padahal host ini selalu online di jaringan rumah.
-- **Nggak ada firewall sama sekali.** `ufw`, `nft`, `iptables` semua kosong.
-- **42 paket pending update**, termasuk Firefox (156 ke 159) dan ca-certificates.
-- **Secure Boot disabled**, **disk nggak dienkripsi**, dan **root cuma 30 GB**.
+The problems were all in the defaults:
 
-Dari situ hardening dimulai.
+- **SSH accepts passwords.** On a host that is always on the home network, that is just a brute force queue.
+- **No firewall at all.** `ufw`, `nft`, `iptables` all empty. Every inbound packet was accepted.
+- **42 pending updates**, including Firefox (156 to 159) and ca-certificates.
+- **Secure Boot disabled**, **disk not encrypted**, and **root is only 30 GB**.
 
-## Langkah 1: Kunci SSH
+That list set the order of work.
 
-Ini prioritas satu. Password auth di SSH itu cuma nunggu brute force.
+## Step 1: Lock down SSH
+
+Priority one, because password auth is the cheapest door to walk through.
 
 ```ini
 # /etc/ssh/sshd_config.d/99-hardening.conf
@@ -66,29 +67,26 @@ AllowTcpForwarding local
 PermitTunnel no
 ```
 
-Sebelum restart, validasi dulu config-nya biar nggak ngunci diri sendiri:
+Always validate before restarting, otherwise you lock yourself out of your own machine:
 
 ```bash
 sshd -t && systemctl restart ssh
 ```
 
-Selesai, verifikasi: key auth masih jalan, password auth nolak. Root login mati total. Kalau nanti butuh bantuan, backup-nya disimpen di `/root/hardening-backup-<timestamp>`.
+Verified after: key auth still works, password auth gets rejected outright, root login is dead. Original configs are copied to `/root/hardening-backup-<timestamp>` in case I need to walk it back.
 
-## Langkah 2: Firewall, default-deny
+One note on Windows, since I did the same dance there earlier: if the user is in the Administrators group, sshd ignores `~/.ssh/authorized_keys` and only reads `C:\ProgramData\ssh\administrators_authorized_keys`, and that file must be owned by Administrators and SYSTEM only. Took me a few tries to figure out why the key was being offered and refused.
 
-Ini yang paling mengubah rasa aman. Debian fresh install nggak punya firewall aktif, semua inbound diterima. Saya pasang nftables (bukan ufw, langsung ke API-nya aja lebih bersih).
+## Step 2: Firewall, default deny
+
+This is the change you actually feel. Debian ships with no active firewall, so everything inbound is fair game. I went with nftables directly instead of ufw, since it is one less abstraction layer.
 
 ```bash
 apt install nftables
 ```
 
-Ruleset-nya gini:
-
-```
-/etc/nftables.conf
-```
-
 ```nft
+# /etc/nftables.conf
 table inet filter {
     chain input {
         type filter hook input priority filter; policy drop;
@@ -114,26 +112,24 @@ table inet filter {
 }
 ```
 
-Poin pentingnya: **policy drop**, bukan default accept. Semua inbound yang nggak jelas mampus. Cuma SSH dari LAN, mDNS, DHCP, ICMP, dan QUIC yang masuk. Forward chain di-drop total, mesin ini bukan router.
+The important part is `policy drop`, not default accept. Anything inbound that is not explicitly allowed dies. Only SSH from the LAN, mDNS, DHCP, ICMP, and QUIC get through. The forward chain drops everything too, because this box is not a router.
 
-Validasi dulu sebelum jalanin:
+Check the ruleset before loading it:
 
 ```bash
-nft -c -f /etc/nftables.conf   # check saja, nggak load
+nft -c -f /etc/nftables.conf   # parse only, do not load
 systemctl enable --now nftables
 ```
 
-Satu gotcha yang sempat bikin bingung pas verifikasi: setelah ruleset jalan, ada drop UDP `SPT=443 DPT=60520` dari IP Google. Itu sebenarnya QUIC (HTTP/3) balikan dari browser yang conntrack-nya udah kadaluarsa. Kasih `udp sport 443 accept` dan drop jeblok. Sisa yang ke-drop cuma traffic sah yang nggak perlu: broadcast IRC `DPT=6667` dari host lain di LAN, itu bagus diblok.
+One gotcha that had me staring at logs: after the ruleset went live, UDP drops showed up from Google IPs on `SPT=443`. That is just QUIC (HTTP/3) return traffic whose conntrack entry had already expired. Adding `udp sport 443 accept` killed most of the noise. What is left is legitimate traffic that deserves to be blocked, mostly IRC broadcast on `DPT=6667` from other hosts on the LAN.
 
-## Langkah 3: fail2ban + auto-update
+## Step 3: fail2ban and auto updates
 
-SSH udah key-only, tapi lapisan kedua nggak ada salahnya:
+SSH is key-only now, but a second layer costs nothing:
 
 ```bash
 apt install fail2ban unattended-upgrades
 ```
-
-fail2ban di konfigurasi:
 
 ```ini
 # /etc/fail2ban/jail.local
@@ -150,7 +146,7 @@ maxretry = 3
 bantime = 2h
 ```
 
-Dan auto-update biar patch keamanan masuk sendiri:
+And let security patches install themselves:
 
 ```ini
 # /etc/apt/apt.conf.d/20auto-upgrades
@@ -159,9 +155,9 @@ APT::Periodic::Unattended-Upgrade "1";
 APT::Periodic::AutocleanInterval "7";
 ```
 
-## Langkah 4: Kernel hardening
+## Step 4: Kernel hardening
 
-Nilai-nilai sysctl yang masuk akal buat host pribadi:
+The sysctl values that actually make sense for a personal host:
 
 ```ini
 # /etc/sysctl.d/99-hardening.conf
@@ -184,38 +180,37 @@ fs.protected_regular = 2
 fs.suid_dumpable = 0
 ```
 
-Yang paling kerasa: `kptr_restrict` dan `dmesg_restrict` nutup info leak kernel, `ptrace_scope` bikin cuma parent yang bisa ngen-ntrace anaknya (matiin ptrace lintas proses buat user biasa), dan `fs.protected_*` nutup race condition klasik symlink/hardlink di direktori world-writable.
+The ones that matter most: `kptr_restrict` and `dmesg_restrict` shut down kernel info leaks, `ptrace_scope` stops one process from tracing another unless it is the parent, and the `fs.protected_*` family closes the classic symlink and hardlink races in world-writable directories.
 
-## Langkah 5: Upgrade semua
+## Step 5: Upgrade everything
 
-42 paket pending. Jalanin dengan mode noninteractive dan simpan config lokal:
+42 packages waiting. Noninteractive, keeping local configs:
 
 ```bash
 apt-get upgrade -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"
 ```
 
-Firefox 156 ke 159, ca-certificates, webkit, ghostscript, python 3.14, semua masuk tanpa drama.
+Firefox 156 to 159, ca-certificates, webkit, ghostscript, Python 3.14, all in without drama.
 
-## Hasil
+## The result
 
-Selesai semua, reboot, dan verifikasi post-reboot: nftables, fail2ban, unattended-upgrades, SSH, AppArmor semua active. Listening port cuma 22 (LAN aja) dan CUPS di localhost. Outbound normal.
+Rebooted and verified after: nftables, fail2ban, unattended-upgrades, SSH, and AppArmor all active. Listening ports are 22 (LAN only) and CUPS on localhost. Outbound works normally.
 
-Rasa bedanya: dari host yang nerima segalanya, jadi host yang cuma nerima apa yang eksplisit dibuka. SSH key-only, brute force kena ban 2 jam, patch keamanan masuk otomatis, kernel info-leak ditutup.
+The difference is simple. Before, the machine accepted everything. Now it accepts only what I explicitly opened. SSH is key-only, brute force gets banned for two hours, security patches land on their own, and kernel info leaks are closed.
 
-## Yang masih open
+## What is still open
 
-- **Secure Boot disabled**: verifikasi rantai boot UEFI belum aktif. Buat PC yang dipegang sendiri di rumah, prioritasnya lebih rendah, tapi kalau PC-nya dibawa-bawa, nyalain di BIOS + `mokutil --enable-validation`.
-- **Disk belum dienkripsi (LUKS)**: root masih ext4 polos. Ini sebenarnya yang paling penting buat data di disk yang bisa dicuri. Belum dieksekusi karena butuh offline resize dan ini cuma 30 GB root.
-- **Root partition cuma 30 GB** dari 232 GB: sisanya partisi NTFS `Data` lama yang nggak ke-mount. Bakal penuh cepat kalau dipakai install game atau toolchain. Solusinya repartisi dengan partisi baru, atau reinstall.
+- **Secure Boot is off.** UEFI boot chain verification is not active. For a desktop that stays home, that is lower priority, but if the machine travels, turn it on in BIOS plus `mokutil --enable-validation`.
+- **Disk is not encrypted.** Root is plain ext4. This is honestly the one that matters most for data on a disk that can be stolen. Not done yet because it needs an offline resize, and root is only 30 GB.
+- **Root is 30 GB out of 232 GB.** The rest is the old NTFS `Data` partition, unmounted. That root will fill up fast once games or toolchains go in. Fix is repartitioning or reinstalling.
 
-Hardening yang udah jalan nggak hilang kalau salah satu di atas dikerjakan nanti. Semuanya standalone.
+None of the hardening above depends on those three. They can be done later without touching anything already in place.
 
 ## Rollback
 
-Semua langkah punya backup otomatis di `/root/hardening-backup-<timestamp>`: ada salinan `sshd_config` dan `sshd_config.d` asli sebelum disentuh. Ubuntu/Debian kayak gini enaknya: semua config yang diubah cuma file, hapus aja untuk kembali ke default pabrik.
+Every step has a backup in `/root/hardening-backup-<timestamp>`, including the original `sshd_config` and `sshd_config.d`. The nice thing about Debian-style systems is that all of this is just files. Delete them and you are back to factory defaults:
 
 ```bash
-# kalau mau balik ke posisi semula
 rm /etc/ssh/sshd_config.d/99-hardening.conf
 rm /etc/nftables.conf
 rm /etc/fail2ban/jail.local
@@ -224,4 +219,4 @@ systemctl restart ssh
 systemctl restart nftables
 ```
 
-Tapi jujur, saya nggak bakal balik.
+Honestly though, I am not going back.
