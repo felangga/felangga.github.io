@@ -205,18 +205,3 @@ The difference is simple. Before, the machine accepted everything. Now it accept
 - **Root is 30 GB out of 232 GB.** The rest is the old NTFS `Data` partition, unmounted. That root will fill up fast once games or toolchains go in. Fix is repartitioning or reinstalling.
 
 None of the hardening above depends on those three. They can be done later without touching anything already in place.
-
-## Rollback
-
-Every step has a backup in `/root/hardening-backup-<timestamp>`, including the original `sshd_config` and `sshd_config.d`. The nice thing about Debian-style systems is that all of this is just files. Delete them and you are back to factory defaults:
-
-```bash
-rm /etc/ssh/sshd_config.d/99-hardening.conf
-rm /etc/nftables.conf
-rm /etc/fail2ban/jail.local
-rm /etc/sysctl.d/99-hardening.conf
-systemctl restart ssh
-systemctl restart nftables
-```
-
-Honestly though, I am not going back.
