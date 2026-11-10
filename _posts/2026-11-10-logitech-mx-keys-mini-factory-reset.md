@@ -57,7 +57,7 @@ firmware starts clean. Re-pair your devices and typing works again.
 
 The whole thing, including the camera close-up of the keys, is in the video below.
 
-<video controls width="100%">
+<video controls preload="metadata" width="100%">
   <source src="{{ '/assets/videos/mx-keys-mini-factory-reset.mp4' | relative_url }}" type="video/mp4">
   Your browser does not support the video tag.
 </video>
