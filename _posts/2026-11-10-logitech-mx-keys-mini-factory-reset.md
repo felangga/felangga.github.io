@@ -13,47 +13,45 @@ layout: post
 toc: true
 ---
 
-The MX Keys Mini is usually bulletproof. Mine was not. Yesterday it went completely
-not responding — no typing, no backlight, nothing. The Bluetooth connection was fine,
-the computer saw the device, and it simply ignored every keystroke.
+The MX Keys Mini has been my daily driver for a while. Bulletproof, honestly.
+Then yesterday it just died mid-session. Keys stopped registering, no backlight,
+nothing. The machine still saw it connected over Bluetooth, but every keystroke
+went nowhere.
 
-The fix is a hidden factory reset that is not in the manual and barely shows up in
-search results. Here is the exact sequence that brought it back.
+I tried the usual stuff. Power cycle, re-pair, reinstall Options+, even left it
+for an hour hoping it would snap out of it. Nothing worked. The keyboard was
+stuck at the firmware level, and the fix turned out to be a hidden factory reset
+that Logitech does not put in the manual and barely anyone documents.
 
 ## The symptom
 
-- Keys dead: nothing types on any connected device.
-- Receiver and Bluetooth both paired, device shows as connected, but no input arrives.
-- Power LED behavior gives no hint. It just sits there, warm, doing nothing.
-
-No amount of power cycling, re-pairing, or Options+ reinstall helped. The keyboard
-firmware itself was stuck.
+- All keys dead, on every paired device.
+- Bluetooth and the Logi Bolt receiver both showed the keyboard as connected, but no input arrived.
+- Power LED behaved normally. No blinking, no warning patterns, just a keyboard that was warm and useless.
 
 ## The reset sequence
 
-With the keyboard **off**:
+Start with the keyboard **off**.
 
 1. Turn the keyboard on.
-2. Hold `E` and press `ESC` — release both.
-3. Hold `O` and press `ESC` — release both.
-4. Hold `O` and press `ESC` again — release both.
+2. Hold `E`, press `ESC`, release both.
+3. Hold `O`, press `ESC`, release both.
+4. Hold `O`, press `ESC`, release both.
 
-Short version: `ESC O`, `ESC O`, `ESC B` is the commonly quoted chord for the
-MX series factory reset, but on the MX Keys Mini the actual sequence is
-**ESC O, ESC O** — the third chord uses `B` on the full-size MX Keys and is not
-needed on the Mini. If you are doing it on the full-size board, use `ESC O`,
-`ESC O`, `ESC B`.
+So the full chord is `ESC O`, `ESC O`. You will often see `ESC O`, `ESC O`,
+`ESC B` quoted for the MX series, and that is the sequence for the full-size
+MX Keys. The Mini does not need the `B` chord. If you have the bigger board,
+use the three-chord version.
 
-The keyboard resets to factory state: all pairing slots are cleared and the
-firmware starts clean. Re-pair your devices and typing works again.
+The reset clears the Easy-Switch pairing table, so all three device slots are
+wiped. Re-pair whatever you use and typing comes back. That was it. Ten seconds
+of button gymnastics fixed a keyboard that looked ready for the trash.
 
 ## Notes
 
-- The reset wipes every paired device, not just the broken one. Re-pair all three
-  slots afterwards.
-- You must start from a powered-off state. Running the chords while it is on does
-  nothing.
-- No software needed: this is entirely on-device.
+- The reset wipes every paired device, not just the broken one. Re-pair all three Easy-Switch slots after.
+- You have to start from a powered-off state. Running the chords while it is on does nothing.
+- No software involved. It is all on-device, which is handy when the keyboard is the thing that stopped working.
 
 The whole thing, including the camera close-up of the keys, is in the video below.
 
