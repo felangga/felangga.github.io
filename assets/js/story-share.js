@@ -171,9 +171,6 @@
       ctx.fillText(d.date, x, fy);
       fy -= 56;
     }
-    ctx.fillStyle = GREEN;
-    ctx.font = MONO;
-    ctx.fillText("link in bio", x, fy);
 
     return cv;
   }
